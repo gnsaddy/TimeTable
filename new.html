@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body {
+	font-family: 'Lato', sans-serif;
+	background: #353535;
+	color: #FFF;
+}
+h1{
+  font-size:20px;
+}
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer {
+  margin-bottom: 0 !important;
+  margin-top: 80px;
+}
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+      .btn-group {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.btn-group span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-group span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-group:hover span {
+  padding-right: 25px;
+}
+
+.btn-group:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <main>
+      <form class="table"  method="post">
+        <div class="lec">
+        <h1>  Lecturer</h1><br/>
+          <input type="text" name="faculty" value="" placeholder="Faculty Name"><br/>
+          <br />
+        </div>
+        <div class="mod">
+          <h1>Module Name</h1><br>
+          <input type="text" name="mName" value="" placeholder="Enter Module Name"><br>
+          </div>
+          <div class="code">
+            <h1>Module Code</h1><br>
+            <input type="text" name="mCode" value="" placeholder="Enter Module Code"><br><br />
+          </div>
+          <div class="time">
+            <table>
+              <tr>
+                <td><h1>Start Time</h1></td>
+                <td><h1>End Time</h1></td>
+              </tr>
+              <tr>
+                <td><input type="time" name="stime" value="" ></td>
+                <td><input type="time" name="etime" value=""></td>
+              </tr>
+            </table>
+          </div>
+        <div class="loc">
+          <h1>Location</h1><br>
+          <input type="text" name="location" value="" placeholder="Lecture Hall"><br>
+        </div>
+        <div class="day">
+          <h1>Day</h1>
+        </div>
+
+        <tr>
+          <td>
+            <div class="btn-group">
+              <button type="button" name="mon"><span>Mon </span></button>
+              <button type="button" name="tue"><span>Tue </span></button>
+              <button type="button" name="wed"><span>Wed </span></button>
+              <button type="button" name="thur"><span>Thur </span></button>
+              <button type="button" name="friday"><span>Friday </span></button>
+              <button type="button" name="sat"><span>Sat </span></button>
+            </div>
+
+          <td><button class="button"  name="add" ><span style="font-size:15px;">Add To Time-Table</span></td>
+
+      </form>
+
+    </main>
+
+
+
+
+
+
+  </body>
+</html>

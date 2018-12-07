@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Time Table generator" />
+    <meta name="author:" content="Aditya Raj">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+    .button {
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+
+    footer {
+      margin-bottom: 0 !important;
+      margin-top: 80px;
+    }
+    footer p {
+      margin: 0;
+      padding: 0;
+    }
+
+          .btn-group {
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+    .btn-group span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .btn-group span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .btn-group:hover span {
+      padding-right: 25px;
+    }
+
+    .btn-group:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+        </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="branding">
+          <h1><span class="highlight">Time-</span>Table <span class="highlight"> Generator </span> </h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">HOME</a></li>
+            <li><a href="student.html">Student Login</a></li>
+            <li><a href="faculty.html">Faculty Login</a></li>
+            <li> <a href="singup.html">Singup</a> </li>
+            <li> <a href="data.html">Time-Table</a> </li>
+            <li><a href="sample.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        </div>
+    </header>
+    <section id="newsletter">
+      <div class="container">
+        <h1>Suscribe to our Newsletter</h1>
+    <form  method="post">
+      <input type="email" name="email" placeholder="Enter Email ">
+      <button type="button" name="button" class="button_1">Suscribe</button>
+    </form>
+      </div>
+    </section>
+   <section id="boxes">
+     <div class="container">
+       <table>
+
+      <tr>
+        <td>
+            <td><button class="button"  name="add" ><span style="font-size:35px;"> <a href="new.html" style="color:white; font-size:20px;"><strong>Input Data To Time Table</strong></a> </span></td>
+        <td></td>
+        <td></td>
+        <td><button class="button"  name="add" ><span style="font-size:35px;"> <a href="table.html"  style="color:white; font-size:20px;"><strong>Show Time Table</strong></a> </span></td>
+      </tr>
+
+</table>
+      </div>
+    </section>
+
+
+
+
+    <footer>
+      <p><b>TTG</b>, Copyright &copy; 2018</p>
+    </footer>
+
+
+
+
+  </body>
+</html>
